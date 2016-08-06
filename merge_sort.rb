@@ -6,9 +6,9 @@ def merge_sort(a, b = [])
    p a[indexx+1][0]
    p a
     if obj[0] < a[indexx+1][0]
-     b.push([a.delete_at(indexx)[0], a.delete_at(indexx+1)[0]])
+     b.push([a[indexx][0], a[indexx+1][0]])
     else
-      b.push([a.delete_at(indexx+1)[0], a.delete_at(indexx)[0]])
+      b.push([a[indexx+1][0], a[indexx][0]])
     end
  end
 merge_sort(a, b)
